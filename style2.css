@@ -195,6 +195,7 @@ header {
     max-width: 35%;
     padding: 20px;
     margin: 20px 0 0 40px;
+    cursor: pointer;
 }
 @media (max-width: 600px) {
     .study__block {
@@ -214,6 +215,12 @@ header {
     padding: 20px 0 20px 40px;
     font-weight: bold;
     font-size: 1.3em;
+}
+.scale {
+    transition: 1s; /* Время эффекта */
+   }
+.scale:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
 }
 .auditories h2 {
     text-align: center;
@@ -243,6 +250,7 @@ header {
 }
 .advantages h2 {
     text-align: center;
+    margin-bottom: 50px;
 }
 .advantages__grid {
     display: flex;
@@ -269,8 +277,90 @@ header {
     }
 }
 .contacts {
-    padding: 20px 0 0 40px;
+    padding: 50px 0 0 0;
+}
+.contacts__grid {
+    padding: 0 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .contacts h2 {
     text-align: center;
+    padding-bottom: 50px;
+}
+.flex-cont {
+    display: flex;
+    flex-direction: row;
+}
+.place {
+    padding: 0 50px 0 0;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.place p {
+    width: 271px;
+}
+.map {
+    max-width: 60%;
+}
+.map iframe {
+    width: 800px;
+    height: 400px;
+}
+@media (max-width: 1200px) {
+    .flex-cont {
+        flex-direction: column;
+    }
+    .place {
+        padding: 0 20px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .map iframe {
+        width: 600px;
+        height: 300px;
+    }
+}
+@media (max-width: 650px) {
+    .map iframe {
+        width: 500px;
+        height: 300px;
+    }
+}
+@media (max-width: 550px) {
+    .map iframe {
+        width: 450px;
+        height: 250px;
+    }
+    .place {
+        padding: 0;
+        width: 40%;
+    }
+}
+@media (max-width: 500px) {
+    .map iframe {
+        width: 400px;
+        height: 200px;
+    }
+}
+@media (max-width: 450px) {
+    .map iframe {
+        width: 250px;
+        height: 150px;
+    }
+}
+footer {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    color: #FFF;
+    margin-top: 50px;
+}
+.footer__name {
+    padding: 40px 40px 20px 40px;
 }
