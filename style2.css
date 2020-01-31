@@ -37,15 +37,13 @@ header {
     justify-content: center;
     padding: 15px 0;
 }
-li {
-    list-style: none;
-}
 .menu li {
     border-right: black solid 1px;
     cursor: pointer;
     padding: 0 15px;
     font-size: 1.2em;
     font-weight: bold;
+    list-style: none;
 }
 .menu li:last-child {
     border-right: none;
@@ -84,8 +82,9 @@ li {
     position: relative;
 }
 .top img {
-    max-width: 100%;
+    width: 100%;
 }
+
 .top__descr h1 {
     color: #FFF;
     font-size: 1.5em !important;
@@ -144,6 +143,8 @@ li {
 .price_category {
     display: flex;
     justify-content: space-around;
+    max-width: 70%;
+    margin: 0 auto;
 }
 .card {
     display: flex;
@@ -176,13 +177,100 @@ li {
 }
 .teach_descr {
     padding: 20px 0 0 40px;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 .teach_descr p {
     font-weight: bold;
+}
+.teach_descr li {
+    list-style: none;
 }
 .info_bold {
     color: #be1e2d;
     padding: 20px 0 0 40px;
     font-size: 1.3em;
+}
+.study__block {
+    border: 2px solid #2f2f2f;
+    max-width: 35%;
+    padding: 20px;
+    margin: 20px 0 0 40px;
+}
+@media (max-width: 600px) {
+    .study__block {
+        max-width: 70%;
+    }
+}
+.study__block ul {
+    padding: 0 0 0 20px;
+}
+.study__block:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+.study__block:hover p {
+    font-weight: bold;
+}
+.text__addServices {
+    padding: 20px 0 20px 40px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.auditories h2 {
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+.auditories__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.auditories__img img {
+    width: 30%;
+}
+@media (max-width: 1000px) {
+    .auditories__img {
+        flex-direction: column;
+        align-items: center;
+    }
+    .auditories__img img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+.advantages {
+    margin-top: 50px;
+}
+.advantages h2 {
+    text-align: center;
+}
+.advantages__grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.plus {
+    border: 2px solid #2f2f2f;
+    text-align: justify;
+    max-width: 48%;
+    padding: 40px;
+    margin: 1px;
+}
+@media (max-width: 1300px) {
+    .advantages__grid {
+        flex-direction: column;
+        max-width: 80%;
+    }
+    .plus {
+        max-width: 100%;
+    }
+}
+.contacts {
+    padding: 20px 0 0 40px;
+}
+.contacts h2 {
+    text-align: center;
 }
