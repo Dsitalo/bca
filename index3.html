@@ -9,8 +9,8 @@
 	<meta name="google-site-verification" content="V8bt6eH1PbfA0IvumDaQ4JGCUJGlJJIUzGSW8CAAU_k" />
 	<meta name="title" content="автошкола ВСА">
 	<link rel="shortcut icon" href="/img/logo.png" type="image/png">
-    <link rel="stylesheet" href="style2.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
     <script defer src="main.js"></script>
     <title>Автошкола ВСА</title>
 </head>
@@ -18,7 +18,7 @@
     <header>
         <div class="logo">
             <img src="img/logo.png" alt="Автошкола ВСА"/>
-            <p class="color-red">Автошкола ВСА<br> Днепропетровская автошкола<br> Всеукраинского союза автомобилистов</p>
+            <p class="color-red"><span>Автошкола ВСА</span><br> Днепропетровская автошкола<br> Всеукраинского союза<br> автомобилистов</p>
         </div>
         <div class="navigation">
             <ul class="menu">
@@ -30,15 +30,21 @@
         </div>
     </header>
         <div class="top">
-            <img src="img/car.png" alt="не ищите лучшего">
+            <picture>
+            <source media="(min-width : 300px) and (max-width: 600px)"
+                    srcset="img/main_img_600.jpg">   
+            <source media="(min-width: 601px)"
+                    srcset="img/main_img_1200.jpg">   
+            <img src="img/main_img_1200.jpg" 
+                    alt="Автошкола BCA">
+            </picture>
             <div class="top__descr">
-                <h1>АВТОШКОЛА ВСА - не ищите лучшего. Лучшее по крупицам, с любовью собрано здесь для Вас - в нашей автошколе</h1>
-            </div>
-            <div class="top__left_descr">
-                <p>Вы приходите<br> чтобы НАУЧИТЬСЯ!!!</p>
-            </div>
-            <div class="top__right_descr">
-                <p>Мы работаем<br> чтобы НАУЧИТЬ!!!</p>
+                <div class="top__descr_top">
+                    <p class="transfrom_p">Автошкола</p>
+                </div>
+                <div class="top__descr_btm">
+                    <p class="transfrom_p">в самом центре Днепра</p>
+                </div>
             </div>
         </div>
         <div id="price" class="block_price">
@@ -212,10 +218,8 @@
             <div class="footer__name">
                 <p>Днепропетровская автошкола<br> Всеукраинского союза автомобилистов</p>
             </div>
-            <!--<div class="footer__adress">
-                <p>г. Днепр, ул. Центральная, 6<br>г. Каменское, ул. Дунайская, 41А <br>г. Днепр, Пр-т. Сергея Нигояна, 68, офис 22</p>
-            </div>-->
         </footer>
     </div>
 </body>
+
 </html>
