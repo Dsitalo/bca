@@ -261,26 +261,46 @@ header {
         margin-bottom: 20px;
     }
 }
-.advantages {
-    margin-top: 50px;
-}
 .advantages__grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 40px 1fr 20px 1fr 40px;
+    grid-template-rows: 1fr 20px 1fr 20px 1fr;
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 85%;
 }
-
+.advantages__grid h3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    color: #191970;
+    min-height: 80px;
+}
+.plus p {
+    margin-top: 10px;
+}
 .plus {
-    border: 2px solid #2f2f2f;
-    text-align: justify;
-    max-width: 48%;
-    padding: 40px;
-    margin: 1px;
+    border: 2px solid #191970;
+    padding: 15px;
 }
-.contacts {
-    padding: 50px 0 0 0;
+.adv_bl_1 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+.adv_bl_2 {
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+}
+.adv_bl_3 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+.adv_bl_4 {
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
+}
+.adv_bl_5 {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
 }
 .contacts__grid {
     padding: 0 0 0 40px;
