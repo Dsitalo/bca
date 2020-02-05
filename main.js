@@ -51,6 +51,6 @@ window.onload = function () {
       }
       
       var connectTabs = new Tabs();
-    
+
           
 }
