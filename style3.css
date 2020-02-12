@@ -53,16 +53,7 @@ header {
     justify-content: center;
     padding: 15px 0;
 }
-.top__number {
-    text-decoration: none;
-    position: relative;
-    color: #FFF;
-    left: 70%;
-    top: -100px;
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 65px;
-}
+
 .menu li {
     border-right: black solid 1px;
     cursor: pointer;
@@ -89,15 +80,12 @@ header {
     width: 100%;
 }
 .top__descr {
-    color: #FFF;
-    font-weight: bold;
+    color: #191970;
+    font-weight: 900;
     font-size: 48px;
     position: absolute;
-    top: 190px;
-    left: 0;
-}
-.top__descr_top, .top__descr_btm {
-    border-bottom: 20px solid #191970;
+    top: 100px;
+    left: 80px;
 }
 .top__descr_top {
     max-width: 370px;
@@ -105,8 +93,26 @@ header {
 .top__descr_btm {
     padding-right: 85px;
 }
-.transfrom_p {
-    transform: translate(80px, 25px);
+.top__descr_social {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+}
+.top__descr_messengers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+.top__descr_messengers img {
+    width: 76px;
+}
+.top__number {
+    text-decoration: none;
+    color: #F61B06;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 65px;
 }
 .block_price h2 {
     margin: 20px 0 40px 0 !important;
