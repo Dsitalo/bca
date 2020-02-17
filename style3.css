@@ -95,7 +95,7 @@ header {
 }
 .top__descr_social {
     position: absolute;
-    top: 80px;
+    top: 90px;
     right: 80px;
 }
 .top__descr_messengers {
@@ -106,9 +106,23 @@ header {
 }
 .top__descr_messengers img {
     width: 76px;
+    animation: bounce 4s infinite ease-in-out;
+}
+@keyframes bounce {
+    from {
+      transform: scale(1.00);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    to {
+      transform: scale(1.0);
+    }
 }
 .top__number {
     text-decoration: none;
+    position: relative;
+    top: -20px;
     color: #F61B06;
     font-weight: 800;
     font-size: 48px;
