@@ -114,6 +114,9 @@ header {
     font-size: 48px;
     line-height: 65px;
 }
+.block_price .st0{
+    fill: #F61B06;
+}
 .block_price h2 {
     margin: 20px 0 40px 0 !important;
 }
