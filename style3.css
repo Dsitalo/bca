@@ -246,31 +246,35 @@ header {
         justify-content: space-around;
     }
 }
-.top__descr_messengers img {
+.top__descr_messengers svg {
+    overflow: visible;
     width: 76px;
+}
+.top__descr_messengers path {
     animation: bounce 4s infinite ease-in-out;
-}
-@media (max-width: 1150px) {
-    .top__descr_messengers img {
-        width: 90px;
-    }
-}
-@media (max-width: 500px) {
-    .top__descr_messengers img {
-        width: 60px;
-    }
 }
 @keyframes bounce {
     from {
       transform: scale(1.00);
     }
     50% {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
     to {
       transform: scale(1.0);
     }
 }
+@media (max-width: 1150px) {
+    .top__descr_messengers path {
+        width: 90px;
+    }
+}
+@media (max-width: 500px) {
+    .top__descr_messengers path {
+        width: 60px;
+    }
+}
+
 .top__number {
     text-decoration: none;
     position: relative;
@@ -482,28 +486,33 @@ header {
 .text__addServices span {
     font-weight: 800;
 }
-.text__addServices img {
+.text__addServices svg {
     right: 10px;
     position: relative;
     top: 20px;
+    overflow: visible;
+    height: 71px;
+}
+.text__addServices path {
     height: 71px;
 }
 @media (max-width: 900px) {
-    .text__addServices img {
+    .text__addServices svg {
         top: 10px;
         height: 80px;
         width: 40px;
     }
 }
 @media (max-width: 700px) {
-    .text__addServices img {
+    .text__addServices svg {
         top: 20px;
+        height: 120px;
     }
 }
 @media (max-width: 580px) {
-    .text__addServices img {
+    .text__addServices svg {
         top: 20px;
-        height: 120px;
+ 
     }
 }
 .scale {
@@ -738,8 +747,14 @@ header {
     border: 2px solid #F61B06;
     color: #F61B06;
     font-weight: bold;
+    font-size: 12px;
+    line-height: 1;
     cursor: pointer;
     padding: 10px 20px 10px 20px;
+    max-height: 50px;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
 }
 .contacts-btn:hover {
     background-color: #F61B06;
@@ -754,6 +769,16 @@ header {
     background-color: #FFF;
     color: #C4C4C4;
     border: 2px solid #C4C4C4;
+}
+@media (max-width:325px) {
+    .first {
+        position: relative;
+        top: -5px;
+    }
+    .third {
+        position: relative;
+        top: -5px;
+    }
 }
 .cg-btn-1 {
     grid-row: 2 / 3;
