@@ -155,17 +155,24 @@ header {
 }
 @media (max-width: 590px) {
     .top {
-        height: 70vh;
+        background-position-x: 0px;
+        height: 65vh;
     }
 }
 @media (max-width: 515px) {
     .top {
+        background-position-x: -20px;
         height: 60vh;
     }
 }
-@media (max-width: 435px) {
+@media (max-width: 455px) {
     .top {
         height: 50vh;
+    }
+}
+@media (max-width: 380px) {
+    .top {
+        height: 45vh;
     }
 }
 .top__descr {
