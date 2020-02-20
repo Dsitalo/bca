@@ -150,29 +150,40 @@ header {
 }
 @media (max-width: 710px) {
     .top {
-        height: 80vh;
+        height: 75vh;
     }
 }
 @media (max-width: 590px) {
     .top {
         background-position-x: 0px;
-        height: 65vh;
+        height: 50vh;
     }
 }
 @media (max-width: 515px) {
     .top {
-        background-position-x: -20px;
-        height: 60vh;
+        background-position-x: -30px;
     }
 }
 @media (max-width: 455px) {
     .top {
-        height: 50vh;
+        height: 45vh;
+        background-position-x: -30px;
+    }
+}
+@media (max-width: 411px) {
+    .top {
+        height: 41vh;
     }
 }
 @media (max-width: 380px) {
     .top {
-        height: 45vh;
+        height: 40vh;
+    }
+}
+@media (max-width: 330px) {
+    .top {
+        height: 40vh;
+        background-position-x: -20px;
     }
 }
 .top__descr {
@@ -190,7 +201,7 @@ header {
 }
 @media (max-width: 900px) {
     .top__descr {
-        top: 30px;
+        top: 25px;
     }
 }
 @media (max-width: 785px) {
@@ -203,6 +214,7 @@ header {
     .top__descr {
         font-size: 28px;
         left: 20px;
+        top: 20px
     }
 }
 @media (max-width: 430px) {
@@ -582,7 +594,7 @@ header {
 @media (max-width:420px) {
     .advantages__grid {
         width: 95%;
-        margin: 0;
+        margin: 0 auto 0 auto;
         grid-template-columns: 5px 1fr 5px;
         grid-template-rows: 0.8fr 40px 0.8fr 40px 0.8fr 40px 0.8fr 40px 0.8fr;
     } 
@@ -594,7 +606,7 @@ header {
     color: #191970;
     min-height: 80px;
 }
-@media (max-width: 350px) {
+@media (max-width: 390px) {
     .advantages__grid h3 {
         font-size: 18px;
         min-height: 80px;
