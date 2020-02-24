@@ -481,6 +481,11 @@ header {
     color: #FFF;
     background-color: #191970;
 }
+@media (max-width: 1000px) {
+    #theory_program, #practice_program {
+        display: block !important;
+    }
+}
 .text__addServices {
     display: flex;
     padding: 100px 0 20px 80px;
